@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "../keystore.jks",
+            "storePassword": "milos12345",
+            "alias": "key0",
+            "password" : "milos12345",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "../keystore.jks",
+            "storePassword": "milos12345",
+            "alias": "key0",
+            "password" : "milos12345",
+            "keystoreType": ""
+        }
+    }
+}
