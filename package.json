@@ -16,7 +16,7 @@
     "cordova-android": "^8.1.0",
     "cordova-browser": "^6.0.0",
     "cordova-ios": "^5.1.1",
-    "cordova-plugin-purchase": "^10.1.1",
+    "cordova-plugin-purchase": "^10.1.2",
     "cordova-plugin-wkwebview-engine": "^1.2.1"
   },
   "devDependencies": {
@@ -25,8 +25,10 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-purchase": {},
-      "cordova-plugin-wkwebview-engine": {}
+      "cordova-plugin-wkwebview-engine": {},
+      "cordova-plugin-purchase": {
+        "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwU9 / jmiVCZq8TsY7 + SKZWOh51uti1uu9cGawV2nI3kQRfM4cobBMG5azTCYJ8 KYplv4VgX7sT7hTrcdJHou68qmy2Oxv1Y3gJIRDdjdLOztAj4RtHJ5mYW0OJCyMJ + / + DDF5KlWaS G6qvzoVN4SvYl7DA dwqx + / + qXJCRLFZ1D9idStqdg7uUzfOMBHtNtphOaZ2YjwxID8uj2T X31oaD7Cim1Rtn244qePKRNrWH2mp2JFe + MxjTDhndYdzF0RfFT3YHrI23mHjI6kNdkkKmUz8 // k4oJrZcRL / 4bPCq2n2FGKWHhfHETvtjzWst5pIpEjJw48nUiHew9vXWxpO1wIDAQAB"
+      }
     },
     "platforms": [
       "android",
