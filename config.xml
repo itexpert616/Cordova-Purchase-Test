@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="fun.beady.purchasetest" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="fun.beady.purchasetest" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>PurchaseTest</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Purchase Test
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
@@ -22,11 +22,20 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-        <feature name="CDVWKWebViewEngine">
-            <param name="ios-package" value="CDVWKWebViewEngine" />
-        </feature>
-        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-        <preference name="AllowBackForwardNavigationGestures" value="true" />
-        <preference name="AllowBackForwardNavigationGestures" value="true" />
     </platform>
+    
+    <feature name="CDVWKWebViewEngine">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
+    </feature>
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="AllowBackForwardNavigationGestures" value="true" />
+    <preference name="AllowBackForwardNavigationGestures" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+
+    <preference name="StatusBarBackgroundColor" value="#111247"/>
+    <preference name="WKWebViewOnly" value="true"/>
+    <preference name="WebViewBounce" value="false"/>
+    <feature name="StatusBar">
+        <param onload="true" name="ios-package" value="CDVStatusBar"/>
+    </feature>
 </widget>
