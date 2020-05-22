@@ -37,7 +37,7 @@ var app = {
 
     // Setup the receipt validator service.
     store.validator =
-      "https://validator.fovea.cc/v1/validate?appName=fun.beady.purchasetest&apiKey=9ef0be9b-98d7-483b-a13e-2ce9a3230868";
+      "https://validator.fovea.cc/v1/validate?appName=fun.beady.apps&apiKey=894e24ee-f0cc-4832-a771-f669904297f4";
 
     // Set application user name
     store.applicationUsername = "Test";
@@ -80,30 +80,34 @@ var app = {
 
     const content = document.getElementById("content");
     content.innerHTML = `
-        <pre> 
-            ${this.state.error}
-            subscription: ${this.state.status}
-            
-            id:     ${this.state.product1.id || ""}
-            title:  ${this.state.product1.title || ""}
-            state:  ${this.state.product1.state || ""}
-            descr:  ${this.state.product1.description || ""}
-            price:  ${this.state.product1.price || ""}
-            expiry: ${this.state.product1.expiryDate || ""}
-            json:   ${JSON.stringify(this.state.product1)}
-        </pre>
-        ${purchaseProduct1}
+      <pre>
+${this.state.error}
+subscription: ${this.state.status}
+      </pre>
 
-        <pre>
-        
-            id:     ${this.state.product2.id || ""}
-            title:  ${this.state.product2.title || ""}
-            descr:  ${this.state.product2.description || ""}
-            price:  ${this.state.product2.price || ""}
-            state:  ${this.state.product2.state || ""}
-            expiry: ${this.state.product2.expiryDate || ""}
-        </pre>
-        ${purchaseProduct2}
+      <pre> 
+          
+id:     ${this.state.product1.id || ""}
+title:  ${this.state.product1.title || ""}
+state:  ${this.state.product1.state || ""}
+descr:  ${this.state.product1.description || ""}
+price:  ${this.state.product1.price || ""}
+expiry: ${this.state.product1.expiryDate || ""}
+json:   ${JSON.stringify(this.state.product1, undefined, 2)}
+      </pre>
+${purchaseProduct1}
+
+      <pre>
+
+id:     ${this.state.product2.id || ""}
+title:  ${this.state.product2.title || ""}
+descr:  ${this.state.product2.description || ""}
+price:  ${this.state.product2.price || ""}
+state:  ${this.state.product2.state || ""}
+expiry: ${this.state.product2.expiryDate || ""}
+json:   ${JSON.stringify(this.state.product2, undefined, 2)}
+      </pre>
+${purchaseProduct2}
     `;
   },
 };
